@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 
 gem "coffee-rails"
-gem "compass-rails", "~> 2.0.alpha.0"
+gem 'compass-rails', '~> 1.1.2'
 gem "jquery-rails"
 gem "jquery-ui-rails"
 gem "pg"
