@@ -52,7 +52,7 @@ $accent-light:		#C91144;
 $accent-dark:			#000000;
 $accent-darkest:	#00454c;
 $text-shadow:			#555555;
-$input-base:			#C1E0E3;
+$input-base:			#dddddd;
 
 /* $GRID **********************************************************************/
 
@@ -65,7 +65,7 @@ $grid-padding: 10px;
 
 body {
 	background-color: $base;
-  background: url("http://www.icstars.org/sites/all/themes/icstars_twentyeleven/images/bgr-header.png");
+  background: url("bgr-header.png");
 	color: $foreground;
 	font-family: "Roboto", sans-serif;
 	line-height: 140%;
@@ -79,7 +79,7 @@ header, section, footer {
 /* $LAYOUT ********************************************************************/
 
 header {
-	background-image: url("http://www.icstars.org/sites/all/themes/icstars_twentyeleven/images/bgr-blackboard.jpg");
+	background-image: url("bgr-blackboard.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	min-height: 200px;

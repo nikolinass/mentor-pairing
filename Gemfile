@@ -24,5 +24,5 @@ group :development, :test do
   gem "rspec-rails"
   gem "shoulda-matchers"
 end
-
+gem 'unicorn'
 ruby "2.0.0"
