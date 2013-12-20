@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+
 gem "coffee-rails"
 gem "compass-rails", "~> 2.0.alpha.0"
 gem "jquery-rails"
@@ -23,3 +24,5 @@ group :development, :test do
   gem "rspec-rails"
   gem "shoulda-matchers"
 end
+
+ruby "2.0.0"
