@@ -1,7 +1,7 @@
 class AvailabilitiesController < ApplicationController
 
   def new
-    @availability = Availability.new(:location => "Dev Bootcamp")
+    @availability = Availability.new(:location => "i.c.stars|* studio")
   end
 
   def create

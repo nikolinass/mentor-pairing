@@ -42,17 +42,17 @@
 
 /* $VARIABLES *****************************************************************/
 
-$base: 						#e54739;
-$base-shadow:			#9c2217;
+$base: 						#B2B2B2;
+$base-shadow:			#5E5E5E;
 $primary: 				#ffffff;
 $foreground: 			#333333;
-$contrast:				#e9f193;
-$border:					#de3121;
-$accent-light:		#02a9b9;
-$accent-dark:			#007784;
+$contrast:				#ffffff;
+$border:					#5E5E5E;
+$accent-light:		#C91144;
+$accent-dark:			#000000;
 $accent-darkest:	#00454c;
 $text-shadow:			#555555;
-$input-base:			#efefef;
+$input-base:			#C1E0E3;
 
 /* $GRID **********************************************************************/
 
@@ -65,8 +65,9 @@ $grid-padding: 10px;
 
 body {
 	background-color: $base;
+  background: url("http://www.icstars.org/sites/all/themes/icstars_twentyeleven/images/bgr-header.png");
 	color: $foreground;
-	font-family: "Varela Round", sans-serif;
+	font-family: "Roboto", sans-serif;
 	line-height: 140%;
 }
 
@@ -78,11 +79,11 @@ header, section, footer {
 /* $LAYOUT ********************************************************************/
 
 header {
-	background-image: url("heart.png");
+	background-image: url("http://www.icstars.org/sites/all/themes/icstars_twentyeleven/images/bgr-blackboard.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 270px;
-	margin-top: 6em;
+	background-position: top center;
+	min-height: 200px;
+	margin: 6em auto 3em;
 
   @media screen and (max-width: 629px) {
     margin-top: 3em;
@@ -144,8 +145,14 @@ nav {
 }
 
 footer {
-	border-top: 2px solid $border;
+	/*border-top: 2px solid $border;*/
 	padding-bottom: 3em;
+  color:$primary;
+  a {
+    color: lighten($base, 10%);
+    font-weight:bold;
+  }
+
 }
 
 .panel {
@@ -162,9 +169,8 @@ footer {
 	}
 
   a {
-    background-color: #e9f193;
     border-bottom: 1px dashed $accent-light;
-    color: $accent-dark;
+    color: $accent-light;
     font-weight: bold;
     text-decoration: none;
     &:hover {
@@ -222,7 +228,7 @@ footer {
 
   .panel {
     font-size: .75em;
-    background-color: lighten($base, 10%);
+    background-color: lighten($base, 20%);
     @include box-shadow(0 0 0);
     @include box-shadow(3px 3px 1px lighten($base-shadow, 10%));
     text-align: center;
@@ -285,10 +291,10 @@ footer {
 h1 {
 	@include text-shadow(3px 3px 1px $base-shadow);
 	color: #fff;
-	font-size: 4em;
-	text-transform: uppercase;
+	font-size: 5em;
+	text-transform: lowercase;
 	span:nth-child(2) {
-		font-size: 60%;
+		font-size: 50%;
 		vertical-align: middle;
 	}
 }
@@ -313,7 +319,7 @@ a.link {
 	border-bottom: none;
 	color: #fff;
 	font-size: 1.2em;
-	margin: 0;
+	margin: 3em 0;
 	padding: 1em;
 	text-transform: uppercase;
 	&:hover {

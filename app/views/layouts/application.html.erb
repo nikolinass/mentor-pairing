@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pairing is Caring</title>
+  <title>icstars | * studio</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <meta name="viewport" content="initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	<header>
-		<h1><a href="/"><span>Pairing</span> <span>Is</span> <span>Caring<span></a></h1>
+		<h1><br /><br /><a href="http://www.icstars.org/"><span></span> <span></span> <span>i.c.stars | * studio<span></a></h1>
 	  <nav>
       <%= link_to "Find a mentor", availabilities_path, :class => "link", :title => "s4m" %>
       <%= link_to "Offer to mentor", new_availability_path, :class => "link", :title => "m4s" %>
@@ -25,12 +25,12 @@
 	</section>
 
 	<footer>
-		<p>
+		
+			<br/>
 		  Made by
-		  <%= link_to "Erik", "http://allareri.github.io/" %>,
-		  <%= link_to "Dave", "http://redsquirrel.com/dave/" %>, and
-		  <a href="https://github.com/Devbootcamp/mentor-pairing/contributors">the Dev Bootcamp mentoring community</a>.
-		</p>
+		  <%= link_to "xSpirkovska", "https://twitter.com/xSpirkovska" %> &amp;
+		  <a href="https://github.com/Devbootcamp/mentor-pairing/contributors">the Dev Bootcamp mentoring community</a>
+		
 	</footer>
 
 </body>
